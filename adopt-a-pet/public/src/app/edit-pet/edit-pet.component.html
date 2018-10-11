@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="container">
+    <router-outlet></router-outlet>
+  <h1>Pet Shelter</h1>
+  <h3>Edit this pet</h3>
+  <form action='/edit-pet' method='post'>
+<fieldset>
+    <form (submit)= "onSubmit()">
+        <div class="form-group">
+            <label for="name">Pet Name:</label>
+            <input type="textarea" class="form-control" name="name" [(ngModel)]= "petToEdit.name">
+        </div>
+        <div class="form-group">
+            <label for="type">Pet Type:</label>
+            <input type="textarea" class="form-control" name="type" [(ngModel)]= "petToEdit.type">
+        </div>
+        <div class="form-group">
+            <label for="type">Description:</label>
+            <input type="textarea" class="form-control" name="description" [(ngModel)]= "petToEdit.description">
+        </div>
+        <div class="form-group">
+            <label for="type">Skills:</label>
+            <input type="textarea" class="form-control" name="skill" [(ngModel)]= "petToEdit.skill">
+            <input type="textarea" class="form-control" name="skill" [(ngModel)]= "petToEdit.skill">
+            <input type="textarea" class="form-control" name="skill" [(ngModel)]= "petToEdit.skill">
+    
+        </div>
+        <input class="btn btn-primary btn-lg" type="submit" value="Edit Pet">
+        <input class="btn btn-primary btn-lg" type="reset" value="Cancel">
+    </form>   
+  </fieldset>

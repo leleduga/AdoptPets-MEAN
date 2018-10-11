@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="container">
+  <h1>Pet Shelter</h1>
+  <router-outlet></router-outlet>
+  <a href = '/'>Back</a>
+  <h3>Details about {{ pet.name}} </h3>
+  <fieldset *ngFor = "let pet of pets">
+      <p>Pet Type: {{pet.type}}</p>
+      <p>Description: {{pet.description}}</p>
+      <p>Skills: {{pet.skills}}</p>
+      <button (click) = "deletePet(pet)">Adopt this pet!</button>
+ </fieldset>     
+ </div>
+
+

@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="container">
+    <router-outlet></router-outlet>
+  <h1>Pet Shelter</h1>
+  <h3>Know a pet needing a home?</h3>
+  <form action='/new-pet' method='post'>
+    <div class="form-group">
+        <label for="name">Pet Name:</label>
+        <input type="textarea" class="form-control" name="name" placeholder="Pet Name">
+    </div>
+    <div class="form-group">
+        <label for="type">Pet Type:</label>
+        <input type="textarea" class="form-control" name="type" placeholder="Pet Type">
+    </div>
+    <div class="form-group">
+        <label for="type">Description:</label>
+        <input type="textarea" class="form-control" name="description" placeholder="Description">
+    </div>
+    <div class="form-group">
+        <label for="type">Skills:</label>
+        <input type="textarea" class="form-control" name="skill" placeholder="Skill 1">
+        <input type="textarea" class="form-control" name="skill" placeholder="Skill 2">
+        <input type="textarea" class="form-control" name="skill" placeholder="Skill 3">
+
+    </div>
+    <input class="btn btn-primary btn-lg" type="submit" value="Add Pet">
+    <input class="btn btn-primary btn-lg" type="reset" value="Cancel">
+</form>   
+
+</div>  
